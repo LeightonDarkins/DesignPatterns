@@ -1,4 +1,4 @@
-package com.leightondarkins.ObserverPattern;
+package com.leightondarkins.ObserverPattern.JavaUtils;
 
 public class Main {
     public static void main(String[] args) {

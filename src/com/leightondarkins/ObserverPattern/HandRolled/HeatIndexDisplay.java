@@ -1,4 +1,4 @@
-package com.leightondarkins.ObserverPattern;
+package com.leightondarkins.ObserverPattern.HandRolled;
 
 public class HeatIndexDisplay implements Observer, DisplayElement {
     private WeatherData weatherData;

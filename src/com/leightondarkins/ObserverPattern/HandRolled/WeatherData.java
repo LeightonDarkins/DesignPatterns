@@ -1,4 +1,4 @@
-package com.leightondarkins.ObserverPattern;
+package com.leightondarkins.ObserverPattern.HandRolled;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package com.leightondarkins.ObserverPattern;
+package com.leightondarkins.ObserverPattern.HandRolled;
 
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
     private float temperature, humidity;

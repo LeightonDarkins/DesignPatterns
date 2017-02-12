@@ -1,4 +1,4 @@
-package com.leightondarkins.ObserverPattern;
+package com.leightondarkins.ObserverPattern.HandRolled;
 
 public interface Subject {
     void registerObserver(Observer observer);
