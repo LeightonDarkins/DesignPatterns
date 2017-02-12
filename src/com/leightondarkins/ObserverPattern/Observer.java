@@ -1,7 +1,5 @@
 package com.leightondarkins.ObserverPattern;
 
-/**
- * Created by ldarkins on 12/02/2017.
- */
-public class Observer {
+public interface Observer {
+    void update(float temperature, float humidity, float airPressure);
 }

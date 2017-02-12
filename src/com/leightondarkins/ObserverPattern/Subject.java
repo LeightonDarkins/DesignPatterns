@@ -1,7 +1,7 @@
 package com.leightondarkins.ObserverPattern;
 
-/**
- * Created by ldarkins on 12/02/2017.
- */
 public interface Subject {
+    void registerObserver(Observer observer);
+    void removeObserver(Observer observer);
+    void notifyObservers();
 }
