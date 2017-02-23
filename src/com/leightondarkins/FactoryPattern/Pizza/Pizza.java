@@ -1,21 +1,17 @@
 package com.leightondarkins.FactoryPattern.Pizza;
 
-import java.util.ArrayList;
+import com.leightondarkins.FactoryPattern.PizzaIngredient.*;
 
 public abstract class Pizza {
-    String name, dough, sauce;
-    ArrayList<String> toppings = new ArrayList<>();
+    String name;
+    Dough dough;
+    Sauce sauce;
+    Veggies veggies[];
+    Cheese cheese;
+    Pepperoni pepperoni;
+    Clam clams;
 
-    public void prepare() {
-        System.out.println(String.format("Preparing %s", name));
-        System.out.println("Tossing dough...");
-        System.out.println("Adding sauce...");
-        System.out.println("Adding toppings...");
-
-        for (String topping : toppings) {
-            System.out.println(String.format("\t%s", topping));
-        }
-    }
+    public abstract void prepare();
 
     public void box() {
         System.out.println("Place pizza in official pizza store box");
@@ -31,5 +27,9 @@ public abstract class Pizza {
 
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

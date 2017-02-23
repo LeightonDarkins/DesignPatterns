@@ -1,7 +1,34 @@
 package com.leightondarkins.FactoryPattern.PizzaIngredient;
 
-/**
- * Created by ldarkins on 23/02/2017.
- */
-public class NYPizzaIngredientFactory {
+public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
+    @Override
+    public Dough createDough() {
+        return new ThinCrustDough();
+    }
+
+    @Override
+    public Sauce createSauce() {
+        return new MarinaraSauce();
+    }
+
+    @Override
+    public Cheese createCheese() {
+        return new ReggianoCheese();
+    }
+
+    @Override
+    public Veggies[] createVeggies() {
+        Veggies veggies[] = { new Garlic(), new Onion(), new Mushroom(), new RedPepper() };
+        return veggies;
+    }
+
+    @Override
+    public Pepperoni createPepperoni() {
+        return new SlicedPepperoni();
+    }
+
+    @Override
+    public Clam createClam() {
+        return new FreshClam();
+    }
 }

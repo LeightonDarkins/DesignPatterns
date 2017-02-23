@@ -1,7 +1,7 @@
 package com.leightondarkins.FactoryPattern.PizzaIngredient;
 
-/**
- * Created by ldarkins on 23/02/2017.
- */
-public class ThickCrustDough {
+public class ThickCrustDough extends Dough {
+    public ThickCrustDough() {
+        name = "Thick Crust Dough";
+    }
 }

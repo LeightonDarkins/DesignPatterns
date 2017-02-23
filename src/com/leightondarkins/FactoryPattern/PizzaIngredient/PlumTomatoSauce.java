@@ -1,7 +1,7 @@
 package com.leightondarkins.FactoryPattern.PizzaIngredient;
 
-/**
- * Created by ldarkins on 23/02/2017.
- */
-public class PlumTomatoSauce {
+public class PlumTomatoSauce extends Sauce {
+    public PlumTomatoSauce() {
+        name = "Plum Tomato Sauce";
+    }
 }

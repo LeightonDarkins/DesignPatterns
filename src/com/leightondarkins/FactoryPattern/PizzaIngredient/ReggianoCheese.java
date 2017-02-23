@@ -1,7 +1,7 @@
 package com.leightondarkins.FactoryPattern.PizzaIngredient;
 
-/**
- * Created by ldarkins on 23/02/2017.
- */
-public class ReggianoCheese {
+public class ReggianoCheese extends Cheese {
+    public ReggianoCheese() {
+        name = "Reggiano Cheese";
+    }
 }

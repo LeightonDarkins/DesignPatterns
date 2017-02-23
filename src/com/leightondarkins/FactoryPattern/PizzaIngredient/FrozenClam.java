@@ -1,7 +1,7 @@
 package com.leightondarkins.FactoryPattern.PizzaIngredient;
 
-/**
- * Created by ldarkins on 23/02/2017.
- */
-public class FrozenClam {
+public class FrozenClam extends Clam {
+    public FrozenClam() {
+        name = "Frozen Clam";
+    }
 }

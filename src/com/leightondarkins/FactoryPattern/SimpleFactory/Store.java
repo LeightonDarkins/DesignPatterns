@@ -1,7 +1,5 @@
 package com.leightondarkins.FactoryPattern.SimpleFactory;
 
-import com.leightondarkins.FactoryPattern.Pizza.Pizza;
-
 public class Store {
     IPizzaFactory factory;
 
@@ -9,8 +7,8 @@ public class Store {
         this.factory = factory;
     }
 
-    public Pizza orderPizza(String type) {
-        Pizza pizza = factory.createPizza(type);
+    public SimpleFactoryPizza orderPizza(String type) {
+        SimpleFactoryPizza pizza = factory.createPizza(type);
 
         pizza.prepare();
         pizza.bake();

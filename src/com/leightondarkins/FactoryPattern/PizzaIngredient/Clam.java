@@ -1,4 +1,4 @@
 package com.leightondarkins.FactoryPattern.PizzaIngredient;
 
-public class Clam extends Ingredient {
+public abstract class Clam extends Ingredient {
 }

@@ -1,7 +1,10 @@
 package com.leightondarkins.FactoryPattern.PizzaIngredient;
 
-/**
- * Created by ldarkins on 23/02/2017.
- */
-public class PizzaIngredientFactory {
+public interface PizzaIngredientFactory {
+    Dough createDough();
+    Sauce createSauce();
+    Cheese createCheese();
+    Veggies[] createVeggies();
+    Pepperoni createPepperoni();
+    Clam createClam();
 }

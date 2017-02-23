@@ -1,6 +1,6 @@
-package com.leightondarkins.FactoryPattern.Pizza;
+package com.leightondarkins.FactoryPattern.SimpleFactory;
 
-public class NYStyleCheesePizza extends Pizza {
+public class NYStyleCheesePizza extends SimpleFactoryPizza {
     public NYStyleCheesePizza() {
         name = "NY Style Sauce and Cheese Pizza";
         dough = "Thin Crust Dough";
