@@ -1,4 +1,4 @@
-package com.leightondarkins.StrategyPattern;
+package com.leightondarkins.SingletonPattern;
 
 public class UnsafeSingleton {
     private static UnsafeSingleton uniqueInstance;
@@ -6,10 +6,10 @@ public class UnsafeSingleton {
     private UnsafeSingleton() { }
 
     public static UnsafeSingleton getInstance () {
-        if (uniqueInstance === null) {
-            uniqueInstance = new UnsafeSingleton()
+        if (uniqueInstance == null) {
+            uniqueInstance = new UnsafeSingleton();
         }
 
-        return uniqueInstance
+        return uniqueInstance;
     }
 }

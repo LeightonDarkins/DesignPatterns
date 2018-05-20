@@ -1,4 +1,4 @@
-package com.leightondarkins.StrategyPattern;
+package com.leightondarkins.SingletonPattern;
 
 public class ThreadSafeSingleton {
     private volatile static ThreadSafeSingleton uniqueInstance;
@@ -6,15 +6,15 @@ public class ThreadSafeSingleton {
     private ThreadSafeSingleton() { }
 
     public static ThreadSafeSingleton getInstance () {
-        if (uniqueInstance === null) {
+        if (uniqueInstance == null) {
             synchronized (ThreadSafeSingleton.class) {
-                if (uniqueInstance === null) {
-                    uniqueInstance = new ThreadSafeSingleton()
+                if (uniqueInstance == null) {
+                    uniqueInstance = new ThreadSafeSingleton();
                 }
             }
 
         }
 
-        return uniqueInstance
+        return uniqueInstance;
     }
 }
