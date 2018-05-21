@@ -49,6 +49,8 @@ public class RemoteControl {
             stringBuffer.append("[slot " + i + "] " + onCommands[i].getClass().getName() + "    " + offCommands[i].getClass().getName() + "\n");
         }
 
+        stringBuffer.append("[undo] " + undoCommand.getClass().getName());
+
         return stringBuffer.toString();
     }
 }
